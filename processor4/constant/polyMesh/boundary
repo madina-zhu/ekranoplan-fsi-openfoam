@@ -1,0 +1,318 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      binary;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+28
+(
+    inlet
+    {
+        type            patch;
+        nFaces          0;
+        startFace       194869;
+    }
+    outlet
+    {
+        type            patch;
+        nFaces          28;
+        startFace       194869;
+    }
+    outerCylinder
+    {
+        type            wall;
+        inGroups        List<word> 1(wall);
+        nFaces          120;
+        startFace       194897;
+    }
+    propellerStem
+    {
+        type            wall;
+        inGroups        List<word> 1(wall);
+        nFaces          0;
+        startFace       195017;
+    }
+    propellerTip
+    {
+        type            wall;
+        inGroups        List<word> 1(wall);
+        nFaces          75;
+        startFace       195017;
+    }
+    nonCouple1
+    {
+        type            patch;
+        inGroups        List<word> 1(nonCouple);
+        nFaces          1987;
+        startFace       195092;
+    }
+    nonCouple2
+    {
+        type            patch;
+        inGroups        List<word> 1(nonCouple);
+        nFaces          1987;
+        startFace       197079;
+    }
+    nonConformalCyclic_on_nonCouple1
+    {
+        type            nonConformalCyclic;
+        inGroups        List<word> 1(nonConformalCyclic);
+        nFaces          0;
+        startFace       199066;
+        matchTolerance  0.0001;
+        neighbourPatch  nonConformalCyclic_on_nonCouple2;
+        transformType   none;
+        originalPatch   nonCouple1;
+    }
+    nonConformalCyclic_on_nonCouple2
+    {
+        type            nonConformalCyclic;
+        inGroups        List<word> 1(nonConformalCyclic);
+        nFaces          0;
+        startFace       199066;
+        matchTolerance  0.0001;
+        neighbourPatch  nonConformalCyclic_on_nonCouple1;
+        transformType   none;
+        originalPatch   nonCouple2;
+    }
+    nonConformalError_on_nonCouple1
+    {
+        type            nonConformalError;
+        inGroups        List<word> 1(nonConformalError);
+        nFaces          0;
+        startFace       199066;
+        originalPatch   nonCouple1;
+    }
+    nonConformalError_on_nonCouple2
+    {
+        type            nonConformalError;
+        inGroups        List<word> 1(nonConformalError);
+        nFaces          0;
+        startFace       199066;
+        originalPatch   nonCouple2;
+    }
+    procBoundary4to0
+    {
+        type            processor;
+        inGroups        List<word> 1(processor);
+        nFaces          3008;
+        startFace       199066;
+        matchTolerance  0.0001;
+        myProcNo        4;
+        neighbProcNo    0;
+    }
+    procBoundary4to5
+    {
+        type            processor;
+        inGroups        List<word> 1(processor);
+        nFaces          2959;
+        startFace       202074;
+        matchTolerance  0.0001;
+        myProcNo        4;
+        neighbProcNo    5;
+    }
+    procBoundary4to6
+    {
+        type            processor;
+        inGroups        List<word> 1(processor);
+        nFaces          1752;
+        startFace       205033;
+        matchTolerance  0.0001;
+        myProcNo        4;
+        neighbProcNo    6;
+    }
+    procBoundary4to5throughnonConformalCyclic_on_nonCouple1
+    {
+        type            nonConformalProcessorCyclic;
+        inGroups        List<word> 1(nonConformalProcessorCyclic);
+        nFaces          0;
+        startFace       206785;
+        matchTolerance  0.0001;
+        myProcNo        4;
+        neighbProcNo    5;
+        referPatch      nonConformalCyclic_on_nonCouple1;
+        tag             20675;
+        originalPatch   nonCouple1;
+    }
+    procBoundary4to6throughnonConformalCyclic_on_nonCouple1
+    {
+        type            nonConformalProcessorCyclic;
+        inGroups        List<word> 1(nonConformalProcessorCyclic);
+        nFaces          0;
+        startFace       206785;
+        matchTolerance  0.0001;
+        myProcNo        4;
+        neighbProcNo    6;
+        referPatch      nonConformalCyclic_on_nonCouple1;
+        tag             20675;
+        originalPatch   nonCouple1;
+    }
+    procBoundary4to7throughnonConformalCyclic_on_nonCouple1
+    {
+        type            nonConformalProcessorCyclic;
+        inGroups        List<word> 1(nonConformalProcessorCyclic);
+        nFaces          0;
+        startFace       206785;
+        matchTolerance  0.0001;
+        myProcNo        4;
+        neighbProcNo    7;
+        referPatch      nonConformalCyclic_on_nonCouple1;
+        tag             20675;
+        originalPatch   nonCouple1;
+    }
+    procBoundary4to5throughnonConformalCyclic_on_nonCouple2
+    {
+        type            nonConformalProcessorCyclic;
+        inGroups        List<word> 1(nonConformalProcessorCyclic);
+        nFaces          0;
+        startFace       206785;
+        matchTolerance  0.0001;
+        myProcNo        4;
+        neighbProcNo    5;
+        referPatch      nonConformalCyclic_on_nonCouple2;
+        tag             9645;
+        originalPatch   nonCouple2;
+    }
+    procBoundary4to6throughnonConformalCyclic_on_nonCouple2
+    {
+        type            nonConformalProcessorCyclic;
+        inGroups        List<word> 1(nonConformalProcessorCyclic);
+        nFaces          0;
+        startFace       206785;
+        matchTolerance  0.0001;
+        myProcNo        4;
+        neighbProcNo    6;
+        referPatch      nonConformalCyclic_on_nonCouple2;
+        tag             9645;
+        originalPatch   nonCouple2;
+    }
+    procBoundary4to7throughnonConformalCyclic_on_nonCouple2
+    {
+        type            nonConformalProcessorCyclic;
+        inGroups        List<word> 1(nonConformalProcessorCyclic);
+        nFaces          0;
+        startFace       206785;
+        matchTolerance  0.0001;
+        myProcNo        4;
+        neighbProcNo    7;
+        referPatch      nonConformalCyclic_on_nonCouple2;
+        tag             9645;
+        originalPatch   nonCouple2;
+    }
+    procBoundary4to0throughnonConformalCyclic_on_nonCouple2
+    {
+        type            nonConformalProcessorCyclic;
+        inGroups        List<word> 1(nonConformalProcessorCyclic);
+        nFaces          0;
+        startFace       206785;
+        matchTolerance  0.0001;
+        myProcNo        4;
+        neighbProcNo    0;
+        referPatch      nonConformalCyclic_on_nonCouple2;
+        tag             20675;
+        originalPatch   nonCouple2;
+    }
+    procBoundary4to1throughnonConformalCyclic_on_nonCouple2
+    {
+        type            nonConformalProcessorCyclic;
+        inGroups        List<word> 1(nonConformalProcessorCyclic);
+        nFaces          0;
+        startFace       206785;
+        matchTolerance  0.0001;
+        myProcNo        4;
+        neighbProcNo    1;
+        referPatch      nonConformalCyclic_on_nonCouple2;
+        tag             20675;
+        originalPatch   nonCouple2;
+    }
+    procBoundary4to2throughnonConformalCyclic_on_nonCouple2
+    {
+        type            nonConformalProcessorCyclic;
+        inGroups        List<word> 1(nonConformalProcessorCyclic);
+        nFaces          0;
+        startFace       206785;
+        matchTolerance  0.0001;
+        myProcNo        4;
+        neighbProcNo    2;
+        referPatch      nonConformalCyclic_on_nonCouple2;
+        tag             20675;
+        originalPatch   nonCouple2;
+    }
+    procBoundary4to3throughnonConformalCyclic_on_nonCouple2
+    {
+        type            nonConformalProcessorCyclic;
+        inGroups        List<word> 1(nonConformalProcessorCyclic);
+        nFaces          0;
+        startFace       206785;
+        matchTolerance  0.0001;
+        myProcNo        4;
+        neighbProcNo    3;
+        referPatch      nonConformalCyclic_on_nonCouple2;
+        tag             20675;
+        originalPatch   nonCouple2;
+    }
+    procBoundary4to0throughnonConformalCyclic_on_nonCouple1
+    {
+        type            nonConformalProcessorCyclic;
+        inGroups        List<word> 1(nonConformalProcessorCyclic);
+        nFaces          0;
+        startFace       206785;
+        matchTolerance  0.0001;
+        myProcNo        4;
+        neighbProcNo    0;
+        referPatch      nonConformalCyclic_on_nonCouple1;
+        tag             9645;
+        originalPatch   nonCouple1;
+    }
+    procBoundary4to1throughnonConformalCyclic_on_nonCouple1
+    {
+        type            nonConformalProcessorCyclic;
+        inGroups        List<word> 1(nonConformalProcessorCyclic);
+        nFaces          0;
+        startFace       206785;
+        matchTolerance  0.0001;
+        myProcNo        4;
+        neighbProcNo    1;
+        referPatch      nonConformalCyclic_on_nonCouple1;
+        tag             9645;
+        originalPatch   nonCouple1;
+    }
+    procBoundary4to2throughnonConformalCyclic_on_nonCouple1
+    {
+        type            nonConformalProcessorCyclic;
+        inGroups        List<word> 1(nonConformalProcessorCyclic);
+        nFaces          0;
+        startFace       206785;
+        matchTolerance  0.0001;
+        myProcNo        4;
+        neighbProcNo    2;
+        referPatch      nonConformalCyclic_on_nonCouple1;
+        tag             9645;
+        originalPatch   nonCouple1;
+    }
+    procBoundary4to3throughnonConformalCyclic_on_nonCouple1
+    {
+        type            nonConformalProcessorCyclic;
+        inGroups        List<word> 1(nonConformalProcessorCyclic);
+        nFaces          0;
+        startFace       206785;
+        matchTolerance  0.0001;
+        myProcNo        4;
+        neighbProcNo    3;
+        referPatch      nonConformalCyclic_on_nonCouple1;
+        tag             9645;
+        originalPatch   nonCouple1;
+    }
+)
+
+// ************************************************************************* //

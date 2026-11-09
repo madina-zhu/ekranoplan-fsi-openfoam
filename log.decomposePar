@@ -1,0 +1,238 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 12-86e126a7bc4d
+Exec   : decomposePar -noFields
+Date   : Nov 09 2026
+Time   : 01:59:23
+Host   : "madina-MCLF-XX"
+PID    : 2243205
+I/O    : uncollated
+Case   : /home/madina/ekranoplan_project/my_propeller_working
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Skipping decomposing fields
+
+Create time
+
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+Calculating distribution of cells
+
+Selecting decomposer hierarchical
+
+Finished decomposition in 0.001937 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+
+Processor 0
+    Number of cells = 360
+    Number of faces shared with processor 1 = 60
+    Number of faces shared with processor 2 = 36
+    Number of faces shared with processor 4 = 60
+    Number of processor patches = 3
+    Number of processor faces = 156
+    Number of boundary faces = 156
+
+Processor 1
+    Number of cells = 360
+    Number of faces shared with processor 0 = 60
+    Number of faces shared with processor 3 = 36
+    Number of faces shared with processor 5 = 60
+    Number of processor patches = 3
+    Number of processor faces = 156
+    Number of boundary faces = 156
+
+Processor 2
+    Number of cells = 360
+    Number of faces shared with processor 0 = 36
+    Number of faces shared with processor 3 = 60
+    Number of faces shared with processor 6 = 60
+    Number of processor patches = 3
+    Number of processor faces = 156
+    Number of boundary faces = 156
+
+Processor 3
+    Number of cells = 360
+    Number of faces shared with processor 1 = 36
+    Number of faces shared with processor 2 = 60
+    Number of faces shared with processor 7 = 60
+    Number of processor patches = 3
+    Number of processor faces = 156
+    Number of boundary faces = 156
+
+Processor 4
+    Number of cells = 360
+    Number of faces shared with processor 0 = 60
+    Number of faces shared with processor 5 = 60
+    Number of faces shared with processor 6 = 36
+    Number of processor patches = 3
+    Number of processor faces = 156
+    Number of boundary faces = 156
+
+Processor 5
+    Number of cells = 360
+    Number of faces shared with processor 1 = 60
+    Number of faces shared with processor 4 = 60
+    Number of faces shared with processor 7 = 36
+    Number of processor patches = 3
+    Number of processor faces = 156
+    Number of boundary faces = 156
+
+Processor 6
+    Number of cells = 360
+    Number of faces shared with processor 2 = 60
+    Number of faces shared with processor 4 = 36
+    Number of faces shared with processor 7 = 60
+    Number of processor patches = 3
+    Number of processor faces = 156
+    Number of boundary faces = 156
+
+Processor 7
+    Number of cells = 360
+    Number of faces shared with processor 3 = 60
+    Number of faces shared with processor 5 = 36
+    Number of faces shared with processor 6 = 60
+    Number of processor patches = 3
+    Number of processor faces = 156
+    Number of boundary faces = 156
+
+Number of processor faces = 624
+Max number of cells = 360 (0% above average 360)
+Max number of processor patches = 3 (0% above average 3)
+Max number of faces between processors = 156 (0% above average 156)
+
+Time = 0s
+
+End
+
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 12-86e126a7bc4d
+Exec   : decomposePar -fields -copyZero
+Date   : Nov 09 2026
+Time   : 02:01:09
+Host   : "madina-MCLF-XX"
+PID    : 2243975
+I/O    : uncollated
+Case   : /home/madina/ekranoplan_project/my_propeller_working
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+Time = 0s
+
+Processor 0: copying "/home/madina/ekranoplan_project/my_propeller_working/0"
+ to "/home/madina/ekranoplan_project/my_propeller_working/processor0/0"
+Processor 1: copying "/home/madina/ekranoplan_project/my_propeller_working/0"
+ to "/home/madina/ekranoplan_project/my_propeller_working/processor1/0"
+Processor 2: copying "/home/madina/ekranoplan_project/my_propeller_working/0"
+ to "/home/madina/ekranoplan_project/my_propeller_working/processor2/0"
+Processor 3: copying "/home/madina/ekranoplan_project/my_propeller_working/0"
+ to "/home/madina/ekranoplan_project/my_propeller_working/processor3/0"
+Processor 4: copying "/home/madina/ekranoplan_project/my_propeller_working/0"
+ to "/home/madina/ekranoplan_project/my_propeller_working/processor4/0"
+Processor 5: copying "/home/madina/ekranoplan_project/my_propeller_working/0"
+ to "/home/madina/ekranoplan_project/my_propeller_working/processor5/0"
+Processor 6: copying "/home/madina/ekranoplan_project/my_propeller_working/0"
+ to "/home/madina/ekranoplan_project/my_propeller_working/processor6/0"
+Processor 7: copying "/home/madina/ekranoplan_project/my_propeller_working/0"
+ to "/home/madina/ekranoplan_project/my_propeller_working/processor7/0"
+
+End
+

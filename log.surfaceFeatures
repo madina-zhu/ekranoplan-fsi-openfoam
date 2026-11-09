@@ -1,0 +1,165 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 12-86e126a7bc4d
+Exec   : surfaceFeatures
+Date   : Nov 09 2026
+Time   : 01:59:23
+Host   : "madina-MCLF-XX"
+PID    : 2243203
+I/O    : uncollated
+Case   : /home/madina/ekranoplan_project/my_propeller_working
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From function Foam::functionObjectList::functionObjectList(const Foam::Time&, bool)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 253
+    Both "system/functions" and "system/controlDict/functions" found, the latter will be ignored.
+Reading "surfaceFeaturesDict"
+
+Surface            : "propeller-innerCylinder.obj"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 236
+Vertices     : 120
+Bounding Box : (-0.12 -0.08 -0.12) (0.12 0.06 0.12)
+
+
+Constructing feature set from included angle 2.61799
+Selecting edges purely based on geometric tests: no
+Removing features of length < -4.5036e+15
+Removing features with number of edges < 10
+
+Initial feature set:
+    feature points : 0
+    feature edges  : 120
+    of which
+        region edges   : 0
+        external edges : 120
+        internal edges : 0
+
+
+Final feature set:
+points      : 120
+edges       : 120
+boundingBox : (-0.12 -0.08 -0.12) (0.12 0.06 0.12)
+point classification :
+    convex feature points          :        0
+    concave feature points         :        0
+    mixed feature points           :        0
+    other (non-feature) points     :      120
+edge classification :
+    external (convex angle) edges  :      120
+    internal (concave angle) edges :        0
+    flat region edges              :        0
+    open edges                     :        0
+    multiply connected edges       :        0
+
+Writing extendedFeatureEdgeMesh to "constant/extendedFeatureEdgeMesh/propeller-innerCylinder.extendedFeatureEdgeMesh"
+
+Writing featureEdgeMesh to "constant/geometry/propeller-innerCylinder.eMesh"
+
+Surface            : "propeller-outerCylinder.obj"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 196
+Vertices     : 100
+Bounding Box : (-0.3 -0.8 -0.299408) (0.3 0.2 0.299408)
+
+
+Constructing feature set from included angle 2.61799
+Selecting edges purely based on geometric tests: no
+Removing features of length < -4.5036e+15
+Removing features with number of edges < 10
+
+Initial feature set:
+    feature points : 0
+    feature edges  : 100
+    of which
+        region edges   : 100
+        external edges : 0
+        internal edges : 0
+
+
+Final feature set:
+points      : 100
+edges       : 100
+boundingBox : (-0.3 -0.8 -0.299408) (0.3 0.2 0.299408)
+point classification :
+    convex feature points          :        0
+    concave feature points         :        0
+    mixed feature points           :        0
+    other (non-feature) points     :      100
+edge classification :
+    external (convex angle) edges  :      100
+    internal (concave angle) edges :        0
+    flat region edges              :        0
+    open edges                     :        0
+    multiply connected edges       :        0
+
+Writing extendedFeatureEdgeMesh to "constant/extendedFeatureEdgeMesh/propeller-outerCylinder.extendedFeatureEdgeMesh"
+
+Writing featureEdgeMesh to "constant/geometry/propeller-outerCylinder.eMesh"
+
+Surface            : "propeller.obj"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 37240
+Vertices     : 19097
+Bounding Box : (-0.0974567 -0.061 -0.0974567) (0.0974567 0.2 0.0974616)
+
+
+Constructing feature set from included angle 2.61799
+Selecting edges purely based on geometric tests: no
+Removing features of length < -4.5036e+15
+Removing features with number of edges < 10
+
+Initial feature set:
+    feature points : 24
+    feature edges  : 2052
+    of which
+        region edges   : 952
+        external edges : 1092
+        internal edges : 8
+
+
+Final feature set:
+points      : 2056
+edges       : 2052
+boundingBox : (-0.0974567 -0.0194876 -0.0974567) (0.0974567 0.2 0.0974616)
+point classification :
+    convex feature points          :       16
+    concave feature points         :        0
+    mixed feature points           :        8
+    other (non-feature) points     :     2032
+edge classification :
+    external (convex angle) edges  :     1092
+    internal (concave angle) edges :        8
+    flat region edges              :        0
+    open edges                     :      952
+    multiply connected edges       :        0
+
+Writing extendedFeatureEdgeMesh to "constant/extendedFeatureEdgeMesh/propeller.extendedFeatureEdgeMesh"
+
+Writing featureEdgeMesh to "constant/geometry/propeller.eMesh"
+
+ExecutionTime = 0.183241 s  ClockTime = 0 s
+
+End
+

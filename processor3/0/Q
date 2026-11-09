@@ -1,0 +1,188 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      binary;
+    class       volScalarField;
+    location    "0";
+    object      Q;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 -2 0 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    inlet
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    outlet
+    {
+        type            calculated;
+        value           nonuniform List<scalar> 
+0
+;
+    }
+    outerCylinder
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    propellerStem
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    propellerTip
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    nonCouple1
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    nonCouple2
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    nonConformalCyclic_on_nonCouple1
+    {
+        type            nonConformalCyclic;
+    }
+    nonConformalCyclic_on_nonCouple2
+    {
+        type            nonConformalCyclic;
+    }
+    nonConformalError_on_nonCouple1
+    {
+        type            nonConformalError;
+    }
+    nonConformalError_on_nonCouple2
+    {
+        type            nonConformalError;
+    }
+    procBoundary3to1
+    {
+        type            processor;
+        value           uniform 0;
+    }
+    procBoundary3to2
+    {
+        type            processor;
+        value           uniform 0;
+    }
+    procBoundary3to7
+    {
+        type            processor;
+        value           uniform 0;
+    }
+    procBoundary3to4throughnonConformalCyclic_on_nonCouple1
+    {
+        type            nonConformalProcessorCyclic;
+        value           nonuniform List<scalar> 
+0
+;
+    }
+    procBoundary3to5throughnonConformalCyclic_on_nonCouple1
+    {
+        type            nonConformalProcessorCyclic;
+        value           nonuniform List<scalar> 
+0
+;
+    }
+    procBoundary3to6throughnonConformalCyclic_on_nonCouple1
+    {
+        type            nonConformalProcessorCyclic;
+        value           nonuniform List<scalar> 
+0
+;
+    }
+    procBoundary3to7throughnonConformalCyclic_on_nonCouple1
+    {
+        type            nonConformalProcessorCyclic;
+        value           nonuniform List<scalar> 
+0
+;
+    }
+    procBoundary3to4throughnonConformalCyclic_on_nonCouple2
+    {
+        type            nonConformalProcessorCyclic;
+        value           nonuniform List<scalar> 
+0
+;
+    }
+    procBoundary3to5throughnonConformalCyclic_on_nonCouple2
+    {
+        type            nonConformalProcessorCyclic;
+        value           nonuniform List<scalar> 
+0
+;
+    }
+    procBoundary3to6throughnonConformalCyclic_on_nonCouple2
+    {
+        type            nonConformalProcessorCyclic;
+        value           nonuniform List<scalar> 
+0
+;
+    }
+    procBoundary3to7throughnonConformalCyclic_on_nonCouple2
+    {
+        type            nonConformalProcessorCyclic;
+        value           nonuniform List<scalar> 
+0
+;
+    }
+    procBoundary3to0throughnonConformalCyclic_on_nonCouple2
+    {
+        type            nonConformalProcessorCyclic;
+        value           nonuniform List<scalar> 
+0
+;
+    }
+    procBoundary3to1throughnonConformalCyclic_on_nonCouple2
+    {
+        type            nonConformalProcessorCyclic;
+        value           uniform 0;
+    }
+    procBoundary3to2throughnonConformalCyclic_on_nonCouple2
+    {
+        type            nonConformalProcessorCyclic;
+        value           nonuniform List<scalar> 
+0
+;
+    }
+    procBoundary3to0throughnonConformalCyclic_on_nonCouple1
+    {
+        type            nonConformalProcessorCyclic;
+        value           nonuniform List<scalar> 
+0
+;
+    }
+    procBoundary3to1throughnonConformalCyclic_on_nonCouple1
+    {
+        type            nonConformalProcessorCyclic;
+        value           uniform 0;
+    }
+    procBoundary3to2throughnonConformalCyclic_on_nonCouple1
+    {
+        type            nonConformalProcessorCyclic;
+        value           nonuniform List<scalar> 
+0
+;
+    }
+}
+
+
+// ************************************************************************* //
