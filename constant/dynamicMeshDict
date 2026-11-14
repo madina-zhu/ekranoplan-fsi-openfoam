@@ -14,23 +14,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-mover
-{
-    type            motionSolver;
-
-    libs            ("libfvMotionSolvers.so");
-
-    motionSolver    solidBody;
-
-    cellZone        innerCylinder;
-
-    solidBodyMotionFunction  rotatingMotion;
-
-    origin      (0 0 0);
-    axis        (0 1 0);
-
-    omega       1500 [rpm];
-}
-
+// Вращение отключено, так как винт убран из этой сетки.
+// Здесь должен быть блок mover для вращения, но сейчас он не нужен.
 
 // ************************************************************************* //
