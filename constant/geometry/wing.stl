@@ -489,4 +489,32 @@ solid wing
       vertex 0 0 0.05
     endloop
   endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 0.0 0.0 0
+      vertex 1.0 -0.0013 0
+      vertex 0.0 0.0 0.05
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 1.0 -0.0013 0
+      vertex 1.0 -0.0013 0.05
+      vertex 0.0 0.0 0.05
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 0.95 -0.0016 0
+      vertex 0.0 0.0 0
+      vertex 0.95 -0.0016 0.05
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 0.0 0.0 0
+      vertex 0.0 0.0 0.05
+      vertex 0.95 -0.0016 0.05
+    endloop
+  endfacet
 endsolid wing
