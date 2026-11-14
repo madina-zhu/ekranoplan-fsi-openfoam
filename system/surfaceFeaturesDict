@@ -15,9 +15,7 @@ FoamFile
 
 surfaces
 (
-    "propeller-innerCylinder.obj"
-    "propeller-outerCylinder.obj"
-    "propeller.obj"
+    "wing.stl"
 );
 
 // Identify a feature when angle between faces < includedAngle
