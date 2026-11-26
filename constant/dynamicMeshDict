@@ -1,0 +1,68 @@
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      dynamicMeshDict;
+}
+
+// Вращение винта
+mover
+{
+    type            motionSolver;
+    libs            ("libfvMotionSolvers.so");
+    motionSolver    solidBody;
+    cellZone        innerCylinder;
+    solidBodyMotionFunction  rotatingMotion;
+    origin      (0 0 0);
+    axis        (0 1 0);
+    omega       1500 [rpm];
+}
+
+// Движение всего аппарата (6DoF)
+dynamicFvMesh   dynamicMotionSolverFvMesh;
+motionSolverLibs ("librigidBodyMeshMotion.so");
+motionSolver    rigidBodyMotion;
+
+rigidBodyMotionCoeffs
+{
+    report          on;
+    solver
+    {
+        type    Newmark;
+        gamma   0.5;
+        beta    0.25;
+    }
+
+    bodies
+    {
+        wing
+        {
+            type            rigidBody;
+            parent          root;
+            centreOfMass    (0 0 0);
+            mass            1.0;
+            inertia         (1 1 1);
+            orientation
+            (
+                1 0 0
+                0 1 0
+                0 0 1
+            );
+        }
+    }
+
+    restraints
+    {
+        vertical
+        {
+            type    linear;
+            axis    (0 0 1);
+        }
+        pitch
+        {
+            type    angular;
+            axis    (1 0 0);
+        }
+    }
+}
