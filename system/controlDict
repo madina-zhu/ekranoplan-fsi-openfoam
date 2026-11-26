@@ -15,8 +15,7 @@ FoamFile
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 application     foamRun;
-
-solver          incompressibleFluid;
+solver          incompressibleVoF;
 
 startFrom       startTime;
 
@@ -52,6 +51,7 @@ runTimeModifiable true;
 adjustTimeStep  yes;
 
 maxCo           2;
+maxAlphaCo      1;
 
 functions
 {
