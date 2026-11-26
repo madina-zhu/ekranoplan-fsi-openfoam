@@ -1,0 +1,9 @@
+0.0*
+0.01
+0.005
+postProcessing/
+processor*
+log.*
+*.eMesh
+*.obj.gz
+constant/polyMesh/
